@@ -12,7 +12,26 @@ function absoluteValuesSumMinimization(a) {
   return isEven ? a[a.length / 2 - 1] : a[Math.floor(a.length / 2)];
 }
 
-console.log(absoluteValuesSumMinimization([2, 4, 7]));
+console.log(absoluteValuesSumMinimization([3, 2, 4, 7]));
 console.log(absoluteValuesSumMinimization([2, 4, 7, 6]));
 console.log(absoluteValuesSumMinimization([2, 4, 7, 6, 6]));
-console.log(absoluteValuesSumMinimization([2, 4, 7, 6, 6, 8]));
+console.log(
+  absoluteValuesSumMinimization([2, 4, 7, 6, 6, 8, 9, 9, 10, 11, 12])
+);
+
+const absoluteValuesSumMinimizations = arr => {
+  let sorted = arr.sort(function(a, b) {
+    return a - b;
+  });
+  console.log(arr);
+  let isEvens = sorted.length % 2 === 0;
+  return isEvens
+    ? sorted[sorted.length / 2 - 1]
+    : sorted[Math.floor(sorted.length / 2)];
+};
+
+console.log(absoluteValuesSumMinimizations([3, 1, 2, 6, 4, 5, 1]));
+console.log(
+  absoluteValuesSumMinimizations([2, 4, 7, 6, 6, 10, 11, 12, 13, 14, 15])
+);
+console.log(absoluteValuesSumMinimizations([2, 4, 7, 6, 7, 8, 9, 10, 11]));

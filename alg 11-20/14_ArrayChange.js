@@ -13,9 +13,11 @@
 function arrayChange(inputArray) {
   let count = 0;
   for (let i = 0; i < inputArray.length; i++) {
-    // check to see if the second number is > or (larger) then the current number
+    // check to see if the following number is > or (larger) then the current number
     if (inputArray[i] >= inputArray[i + 1]) {
       const difference = inputArray[i] + 1 - inputArray[i + 1];
+      // reassign the next value in the array to the current value plus one
+      // meaning that a 1 will become 2  or 2 become 3 and so on...
       inputArray[i + 1] = inputArray[i] + 1;
       count += difference;
     }
@@ -23,4 +25,6 @@ function arrayChange(inputArray) {
   return count;
 }
 
-console.log(arrayChange([1, 2, 3]));
+console.log(arrayChange([1, 2, 2]));
+console.log(arrayChange([1, 1, 1]));
+console.log(arrayChange([3, 2, 1]));

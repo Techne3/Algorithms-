@@ -15,3 +15,4 @@ function candies(n, m) {
 }
 
 console.log(candies(1, 10));
+console.log(candies(3, 10));

@@ -7,7 +7,7 @@
 // For sequence = [1,3,2] the output should be almostIncreasingSequence(sequence) = true;
 // You can remove 3 from the array to get the increasing sequence [1,2]
 
-const almostIncreasingSequence = sequence => {
+const almostIncreasingSequence = (sequence) => {
   let count = 0;
 
   for (let i = 0; i < sequence.length; i++) {

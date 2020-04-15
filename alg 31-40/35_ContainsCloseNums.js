@@ -13,6 +13,7 @@ function containsCloseNums(nums, k) {
     for (let j = 0; j < nums.length; j++) {
       if (i !== j) {
         if (nums[i] === nums[j]) {
+          /// math absolute
           if (Math.abs(i - j) <= k) {
             return true;
           }

@@ -33,6 +33,7 @@
 function differentSymbolsNaive(s) {
   const uniqueChars = new Set();
   const inputChars = s.split("");
+  console.log(inputChars);
 
   inputChars.forEach((char) => {
     uniqueChars.add(char);

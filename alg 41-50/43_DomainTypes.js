@@ -13,7 +13,9 @@ function domainTypes(domains) {
 
   for (let i = 0; i < domains.length; i++) {
     const domain = domains[i].split(".");
+    // console.log(domain);
     const lastDomain = domain[domain.length - 1];
+    // console.log(lastDomain)
 
     if (lastDomain === "org") {
       domainType.push("organization");

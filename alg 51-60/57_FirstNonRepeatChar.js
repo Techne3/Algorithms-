@@ -28,7 +28,6 @@
 function firstNotRepeatingChar(s) {
   for (let i = 0; i < s.length; i++) {
     if (s.indexOf(s[i]) === i && s.lastIndexOf(s[i]) === i) {
-      console.log(i);
       console.log(s[i]);
       return s[i];
     }

@@ -56,7 +56,7 @@ function palindrome(a) {
 
   return result.length ? result[0] : -1;
 }
-console.log(palindrome("aabbccc"));
+console.log(palindrome("abbccc"));
 
 // function LS(str) {
 //   let result = [];
